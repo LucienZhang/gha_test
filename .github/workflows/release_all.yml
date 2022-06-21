@@ -1,0 +1,13 @@
+name: release published
+
+on:
+  release
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check
+      env:
+        EVENT: ${{ github.event }}
+        run: echo $EVENT
