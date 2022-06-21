@@ -7,6 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check
-        env:
-          EVENT: ${{ github.event }}
-        run: echo $EVENT
+        run: echo ${{ github.event }}
